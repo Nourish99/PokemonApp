@@ -1,0 +1,113 @@
+.bg-trans{
+    background: transparent;
+}
+
+#pok-name h1{
+    font-size: 10rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+    
+}
+
+#pok-name{
+    color: rgb(209, 46, 46);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(236, 199, 129);
+    border-radius: 25px;
+}
+
+#prin{
+    background-image: url('../../../assets/backg.png');  
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    color: antiquewhite;
+    padding-bottom: 10%;
+}
+
+.cont-t h2{
+    font-weight: 800;
+    font-size: 3rem;
+    color: black;
+}
+
+.cont-t{
+    padding: 2rem;
+}
+
+#cont-stats-all{
+    margin-top: 10%;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.content-chars{
+    color: black;
+    padding-left: 1rem;
+    margin: 2rem;
+    position: relative;
+    overflow-y: auto;
+}
+.content-chars dt{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.content-chars dd{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.content-chars h2{
+    font-weight: 500;
+    font-size: 3rem;
+    color: black;
+}
+
+.content-chars li{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+#prin-cont{
+    z-index: 1;
+    
+}
+#stats-block{
+    
+}
+@media only screen and (max-width: 600px) {
+    #pok-name h1{
+        font-size: 4rem;
+    }
+    .cont-t h2{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    .content-chars h2{
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .cont-t{
+        padding: 2rem;
+    }
+    #cont-stats-all{
+        padding-top: 5%;
+    }
+    
+}
+.mat-tab-labels, .mat-tab-label, .mat-tab-link {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background-color: rgb(194, 181, 164);
+  }
+  
+  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: rgb(41, 26, 26);
+    height: 5px; 
+  }
+
+/**/

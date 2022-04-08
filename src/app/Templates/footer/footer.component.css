@@ -1,0 +1,40 @@
+footer{
+    position: fixed;
+    height: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    color: azure;
+    z-index: 1
+}
+footer p{
+    color: #8A8A8A;
+}
+
+footer h3{
+    color: #FFF;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+footer hr{
+    border: none;
+    background: #B5B5B5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+}

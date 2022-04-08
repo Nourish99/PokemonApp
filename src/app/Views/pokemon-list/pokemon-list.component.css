@@ -1,0 +1,71 @@
+.btn-flotante {
+	font-size: 16px;
+	text-transform: uppercase; 
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px; 
+	letter-spacing: 2px; 
+	background-color: #ace91e;
+	padding: 18px 30px;
+	position: fixed;
+	bottom: 100px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #2c2fa5; 
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+
+#principal{
+    background-image: url('../../../assets/backg.png'); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    display: block;
+    width: 100%;
+}
+
+
+#pags-c{
+	background-color: #2c2fa5;
+	border-radius: 15px;
+	color: azure;
+}
+
+#tit-div{
+	
+	margin-top: 5%;
+	background-color: #2c2fa5;
+	border-radius: 15px;
+	padding: 1rem;
+}
+#tit-div p{
+	color: rgb(233, 175, 98);
+	font-size: 8rem;
+	text-shadow: 1.5rem;
+	font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+	.btn-flotante {
+	   font-size: 14px;
+	   padding: 12px 20px;
+	   bottom: 125px;
+	   right: 20px;
+   }
+   #tit-div{
+	
+		margin-top: 7%;
+		padding: 0;
+	}
+   #tit-div p{
+	   font-size: 4rem;
+   }
+} 

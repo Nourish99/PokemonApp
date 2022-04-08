@@ -1,0 +1,67 @@
+<section id="prin">
+    <div class="container" id="prin-cont">
+        <div class="row" id="pok-name">
+            <h1 class="col-md-12 col-xs-8 col-sm-12 text-center titulo">{{pokemonData.Name | titlecase}}</h1>
+        </div>
+        <div class="row pt-0" id="cont-stats-all">
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center align-items-center">
+                <carousel [cellsToShow]=1 [cellWidth]=200 [loop]=true [height]=200 [autoplay]=true> 
+
+                    <div class="carousel-cell" *ngFor="let item of pokemonData.Pictures;">
+                        <img src="{{item}}" alt="First slide">
+                    </div>
+                </carousel>
+            </div>
+            <div class="col-lg-8 col-sm-12" id="stats-block">
+                <mat-tab-group mat-align-tabs="center" >
+                    <mat-tab label="Physical">
+                        <div class="content-chars" >
+                            <dl>
+                                
+                                <dt>Height</dt>
+                                <dd>{{pokemonData.Height}} ft.</dd>
+
+                                <dt>Weight</dt>
+                                <dd>{{pokemonData.Weight}} Pounds</dd>
+                            
+                                <dt>Experience</dt>
+                                <dd>{{pokemonData.Experience}} Points</dd>
+                            </dl>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Abilities">
+                        <div class="content-chars">
+                            <h2>Abilities</h2>
+                            <ul>
+                                <li *ngFor="let v of pokemonData.Abilities; let i = index">
+                                    <p>{{v | titlecase}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Stats">
+                        <div class="content-chars">
+                            <h2>Stats</h2>
+                            <dl>
+                                <div *ngFor="let item of pokemonData.Stats; let i = index">
+                                    <dt>{{item.statName | titlecase}} : {{item.value}}%</dt>
+                                    <dd><mat-progress-bar mode="determinate" value="{{item.value}}"></mat-progress-bar></dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Games">
+                        <div class="content-chars">
+                            <h2>Games</h2>
+                            <ul>
+                                <li *ngFor="let v of pokemonData.Games; let i = index">
+                                    <p>{{v}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</section>
